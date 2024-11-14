@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Artificial Intelligence by Abu Momen</title>
+    <meta name="description" content="Today's Artificial Intelligence by Abu Momen provides comprehensive insights into AI, its history, applications, and future.">
+    <meta name="keywords" content="
+    Artificial Intelligence, 
+    AI, 
+    Abu Momen, 
+    AI applications, AI history, AI future, 
+    Can Machines Think?,
+    Different Types of AI,
+    The Reasons for Using AI,
+    Key AI Applications,
+    Key AI Tools for Image Design,
+    Key AI Tools for Video,
+    Programming Languages for AI,
+    Algorithms & Techniques used in AI,
+    Artificial Intelligence & Robotics,
+    Key Popular Humanoid Robots,
+    Overview of the Industrial Revolution,
+    Industrial Revolution phases,
+    Navigating the Impact of AI on Global Jobs,
+    Advantages of Artificial Intelligence  
+    ">
+    <meta name="author" content="Abu Momen">
+    <script type="application/ld+json">
+    {
+      "@context": "https://softfaculty.com/todaysai/",
+      "@type": "Book",
+      "name": "Today's Artificial Intelligence",
+      "author": {
+        "@type": "Person",
+        "name": "Abu Momen"
+      },
+      "genre": "Technology",
+      "description": "Today's Artificial Intelligence by Abu Momen provides comprehensive insights into AI, its history, applications, and future.",
+      "publisher": "DreamCare",
+      "datePublished": "2023-01-01",
+      "image": "https://softfaculty.com/todaysai/"
+    }
+    </script>
+    <meta property="og:title" content="Today's Artificial Intelligence by Abu Momen">
+    <meta property="og:description" content="Comprehensive insights into AI, its history, applications, and future.">
+    <meta property="og:image" content="https://softfaculty.com/todaysai/">
+    <meta property="og:url" content="https://softfaculty.com/todaysai/">
+    <meta name="twitter:card" content="https://softfaculty.com/todaysai/">
+    <meta name="twitter:title" content="Today's Artificial Intelligence by Abu Momen">
+    <meta name="twitter:description" content="Comprehensive insights into AI, its history, applications, and future.">
+    <meta name="twitter:image" content="https://softfaculty.com/todaysai/">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 40px;
+            background: linear-gradient(to left, #2111cb, hsla(220, 16%, 50%, 0.829));
+            color: white;
+            padding: 0 10px;
+        }
+
+        .burger-menu {
+            cursor: pointer;
+            color: red;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .toggle-text {
+            margin-left: 10px;
+            font-size: 20px;
+            cursor: default;
+            color: yellow;
+            font-weight: 20px;
+        }
+
+        .company-logo {
+            margin-left: 20px;
+        }
+
+        .title {
+            color: white;
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .title span {
+            background-color: blueviolet;
+            padding: 8px;
+            border-radius: 40px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input[type="text"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .search-container img {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+        }
+
+        .middle-content {
+            display: flex;
+            height: calc(100% - 70px);
+            background-color: #f4f4f4;
+        }
+
+        .left-navigation {
+            width: 25%;
+            max-width: 350px;
+            background: linear-gradient(to top, #2111cb, hsla(145, 89%, 22%, 0.829));
+            padding: 10px;
+            overflow: auto;
+            transition: width 0.3s ease;
+        }
+
+        .left-navigation.hidden {
+            width: 0;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .content-area {
+            flex-grow: 1;
+            padding: 1px;
+            transition: width 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .full-width {
+            width: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tree-menu a {
+            padding: 5px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .tree-menu a:hover {
+            background-color: #ffa500;
+        }
+
+        .tree-menu a:visited {
+            color: #cccccc;
+        }
+
+        .tree-menu a.active {
+            background-color: rgba(219, 14, 185, 0.489);
+        }
+
+        .tree-menu>a {
+            font-weight: bold;
+        }
+
+        .nested a {
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        .nested {
+            display: none;
+            margin-left: 10px;
+        }
+
+        .caret {
+            cursor: pointer;
+            user-select: none;
+            color: rgb(5, 214, 89);
+            font-size: 16px;
+        }
+
+        .caret::before {
+            content: "▶";
+            color: orange;
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .caret-down::before {
+            transform: rotate(90deg);
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background-color: #038f34;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .navigation-buttons {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        .navigation-buttons button {
+            padding: 8px 8px;
+            border: none;
+            background-color: #2111cb;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .navigation-buttons button:hover {
+            background-color: #ffa500;
+        }
+
+        #bookmark-button {
+            background-color: rgb(3, 133, 27);
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+            padding: 2px 6px;
+            position: relative;
+        }
+
+        #bookmark-button img {
+            width: 20px;
+            height: 20px;
+        }
+
+        #bookmark-button:hover::after {
+            content: "BookMark";
+            position: absolute;
+            left: 50%;
+            bottom: 100%;
+            transform: translateX(-50%);
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            white-space: nowrap;
+            z-index: 10;
+        }
+
+        .switch-container {
+            position: sticky;
+            top: 5px;
+            z-index: 1000;
+            margin: 2px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 25px;
+            left: 200px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #2196F3;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 15px;
+            left: 4px;
+            bottom: 4px;
+            background-color: yellow;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: blueviolet;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px blueviolet;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 14px;
+                text-align: center;
+                margin: 1px 0;
+            }
+
+            .title span {
+                padding: 1px;
+            }
+
+            .topbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .burger-menu {
+                align-self: flex-start;
+                margin-left: 20px;
+                color: red;
+            }
+
+            /* .toggle-text {
+                font-size: 16px;
+            } */
+
+            .search-container {
+                display: none;
+            }
+
+            .navigation-buttons {
+                display: flex;
+                /* flex-direction: column; */
+                align-items: center;
+            }
+
+            .bookmark-button {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="burger-menu">
+            &#9776;
+            <span class="toggle-text">+ -</span>
+        </div>
+
+        <div class="title"><span>Today's Artificial Intelligence</span></div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            <img src="./aiimages/others/searchme.png" id="search-button" alt="Search">
+        </div>
+    </div>
+
+    <div class="middle-content">
+        <div class="left-navigation">
+            <div class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" id="toggle-all">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="tree-menu">
+                <a href="001A-introAI.html" target="content-frame">Welcome</a>
+                <a href="001B-IMF.html" target="content-frame">Comment</a>
+                <a href="001C-acknowledge.html" target="content-frame">Acknowledgment</a>
+                <a href="001D-editorial.html" target="content-frame">Editorial</a>
+                <div class="caret">About AI</div>
+                <div class="nested">
+                    <a href="001-MachinesThink.html" target="content-frame">Can Machines Think?</a>
+                    <a href="002-HistoryAI.html" target="content-frame">History of Artificial Intelligence</a>
+                    <a href="003-whatisAI.html" target="content-frame">An Introduction to AI</a>
+                    <a href="004-AIwork.html" target="content-frame">The Functioning of AI</a>
+                </div>
+
+                <div class="caret">Detailed Types of AI</div>
+                <div class="nested">
+                    <a href="005-typeofAI.html" target="content-frame">Different Types of AI</a>
+                    <a href="006-Capabilities.html" target="content-frame">Based on Capabilities</a>
+                    <a href="007-Functionality.html" target="content-frame">Based on Functionality</a>
+                </div>
+
+                <div class="caret">AI Applications</div>
+                <div class="nested">
+                    <a href="009-AIApplications.html" target="content-frame">AI Applications Overview</a>
+                    <a href="010-AIApplicationDetail.html" target="content-frame">Key Areas of AI Applications</a>
+                </div>
+                <a href="011-WhyAIUsed.html" target="content-frame">The Reasons for Using AI</a>
+                <div class="caret">AI Tools for Writing</div>
+                <div class="nested">
+                    <a href="012-bestAIforWriting.html" target="content-frame">The Best AI Tools for Writing and Content
+                        Creation</a>
+                    <a href="013-fewAIapplications.html" target="content-frame">Key AI Applications</a>
+                </div>
+                <a href="014-ChatGPTPopular.html" target="content-frame"> The Popularity of ChatGPT</a>
+                <a href="015-WhomadeChatGPT.html" target="content-frame"> The Developer of ChatGPT</a>
+                <a href="016-Whatischatbot.html" target="content-frame"> Definition of a Chatbot</a>
+                <a href="017-chatbotchatgpt.html" target="content-frame"> Distinction between Chatbot and ChatGPT </a>
+
+                <div class="caret">AI Tools for Image</div>
+                <div class="nested">
+                    <a href="018-Aitools4image.html" target="content-frame"> The Best AI Tools for Image Design</a>
+                    <a href="019-AIToolsforImage.html" target="content-frame">Key AI Tools for Image Design</a>
+                </div>
+                <div class="caret">AI Tools for Video</div>
+                <div class="nested">
+                    <a href="020-AITools4Video.html" target="content-frame"> The Best AI Tools for Video</a>
+                    <a href="021-fewAITools4Video.html" target="content-frame">Key AI Tools for Video</a>
+                </div>
+                <a href="022-Languagesused4AI.html" target="content-frame">Programming Languages for AI</a>
+                <a href="023-aboutDatabase.html" target="content-frame">Overview of Databases</a>
+                <a href="024-Databasesused4AI.html" target="content-frame">Databases used for AI</a>
+                <a href="025-AlgorithmsTechniques4AI.html" target="content-frame">Algorithms & Techniques used for
+                    AI</a>
+                <a href="026-Techniques4AI.html" target="content-frame">Techniques used in AI</a>
+                <a href="027-AI_Robotics.html" target="content-frame">Artificial Intelligence & Robotics</a>
+
+                <div class="caret">Humanoid Robots</div>
+                <div class="nested">
+                    <a href="028-Whathumanoid_robot.html" target="content-frame">Definition of a Humanoid Robot</a>
+                    <a href="029-PopularHumanoidRobots.html" target="content-frame">Popular Humanoid Robots</a>
+                    <a href="029B-PopularHumanoidRobots.html" target="content-frame">Key Popular Humanoid Robots</a>
+                </div>
+                <div class="caret">About Industrial Revolution</div>
+                <div class="nested">
+                    <a href="030-Relation_AI-IR.html" target="content-frame"> Relationship between AI and the Industrial
+                        Revolution</a>
+                    <a href="031-Whatis_IR.html" target="content-frame">Overview of the Industrial Revolution</a>
+                    <a href="032-IR-transform.html" target="content-frame">Industrial Revolution Transformations</a>
+                    <a href="033-IR_phases.html" target="content-frame">Industrial Revolution phases</a>
+                </div>
+                <a href="034-ImpactAIjobs.html" target="content-frame">Navigating the Impact of AI on Global Jobs</a>
+                <a href="035-AIChangeWorld.html" target="content-frame"> The Influence of Artificial Intelligence on the
+                    World</a>
+                <a href="036-AdvantageAI.html" target="content-frame"> Advantages of Artificial Intelligence</a>
+                <a href="050-AIauthor.html" target="content-frame">Author</a>
+                <a href="990-thankyouAI.html" target="content-frame">Thank you AI</a>
+            </div>
+        </div>
+        <div class="content-area">
+            <div class="navigation-buttons">
+                <button id="prev-button">Previous</button>
+                <button id="bookmark-button" class="bookmark-button"><img src="./aiimages/others/bookmark.png"
+                        alt="Bookmark"></button>
+
+                <button id="next-button">Next</button>
+            </div>
+            <iframe name="content-frame" src="001A-introAI.html"></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="text">
+            <span>Created By <b style="color:orange;">DreamCare</b> | &#169; 2023 All Rights Reserved</span>
+        </div>
+    </div>
+
+    <script>
+        var burgerMenu = document.querySelector('.burger-menu');
+        var leftNav = document.querySelector('.left-navigation');
+        var contentArea = document.querySelector('.content-area');
+        var carets = document.querySelectorAll('.caret');
+        var treeMenuLinks = document.querySelectorAll('.tree-menu a');
+        var prevButton = document.getElementById('prev-button');
+        var nextButton = document.getElementById('next-button');
+        var bookmarkButton = document.getElementById('bookmark-button');
+        var toggleAllSwitch = document.getElementById('toggle-all');
+        var searchButton = document.getElementById('search-button');
+        var searchInput = document.getElementById('search-input');
+
+        var currentIndex = 0;
+        var bookmarkedPage = null;
+        var allExpanded = false;
+
+        burgerMenu.addEventListener('click', function () {
+            leftNav.classList.toggle('hidden');
+            contentArea.classList.toggle('full-width');
+        });
+
+        carets.forEach(caret => {
+            caret.addEventListener('click', function () {
+                this.classList.toggle('caret-down');
+                var nested = this.nextElementSibling;
+                if (nested.style.display === "block") {
+                    nested.style.display = "none";
+                } else {
+                    nested.style.display = "block";
+                }
+            });
+        });
+
+        treeMenuLinks.forEach((link, index) => {
+            link.addEventListener('click', function () {
+                treeMenuLinks.forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+                currentIndex = index;
+                expandParents(this);
+            });
+        });
+
+        function updateContentFrame(index) {
+            if (index >= 0 && index < treeMenuLinks.length) {
+                treeMenuLinks.forEach(link => link.classList.remove('active'));
+                treeMenuLinks[index].classList.add('active');
+                document.querySelector('iframe[name="content-frame"]').src = treeMenuLinks[index].getAttribute('href');
+                treeMenuLinks[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
+                expandParents(treeMenuLinks[index]);
+                currentIndex = index;
+            }
+        }
+
+        function expandParents(element) {
+            var parent = element.parentElement;
+            while (parent && !parent.classList.contains('tree-menu')) {
+                if (parent.classList.contains('nested')) {
+                    parent.style.display = "block";
+                    parent.previousElementSibling.classList.add('caret-down');
+                }
+                parent = parent.parentElement;
+            }
+        }
+
+        prevButton.addEventListener('click', function () {
+            updateContentFrame(currentIndex - 1);
+        });
+
+        nextButton.addEventListener('click', function () {
+            updateContentFrame(currentIndex + 1);
+        });
+
+        bookmarkButton.addEventListener('click', function () {
+            if (bookmarkButton.getAttribute('data-state') === "go-to-bookmark" && bookmarkedPage !== null) {
+                updateContentFrame(bookmarkedPage);
+                bookmarkButton.setAttribute('data-state', "bookmark");
+                bookmarkButton.querySelector('img').src = "./aiimages/others/bookmark.png";
+                localStorage.removeItem('bookmarkedPage');
+            } else {
+                bookmarkedPage = currentIndex;
+                bookmarkButton.setAttribute('data-state', "go-to-bookmark");
+                bookmarkButton.querySelector('img').src = "./aiimages/others/bookmarkgo.png"; // Change the image to indicate go to bookmark state
+                localStorage.setItem('bookmarkedPage', bookmarkedPage);
+            }
+        });
+
+        toggleAllSwitch.addEventListener('change', function () {
+            allExpanded = !allExpanded;
+            var nestedElements = document.querySelectorAll('.nested');
+            nestedElements.forEach(nested => {
+                nested.style.display = allExpanded ? 'block' : 'none';
+            });
+            var carets = document.querySelectorAll('.caret');
+            carets.forEach(caret => {
+                if (allExpanded) {
+                    caret.classList.add('caret-down');
+                } else {
+                    caret.classList.remove('caret-down');
+                }
+            });
+        });
+
+        searchButton.addEventListener('click', function () {
+            var searchTerm = searchInput.value.toLowerCase();
+            var iframe = document.querySelector('iframe[name="content-frame"]');
+            var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+            removeHighlights(iframeDocument);
+            highlightTerm(iframeDocument.body, searchTerm);
+        });
+
+        function highlightTerm(element, term) {
+            if (element) {
+                if (element.nodeType === 3) { // text node
+                    var value = element.nodeValue;
+                    var idx = value.toLowerCase().indexOf(term);
+                    if (idx > -1) {
+                        var span = document.createElement('span');
+                        span.className = 'highlight';
+                        var text = document.createTextNode(value.substr(idx, term.length));
+                        span.appendChild(text);
+                        element.parentNode.insertBefore(span, element.parentNode.insertBefore(
+                            document.createTextNode(value.substr(idx + term.length)), element.nextSibling));
+                        element.nodeValue = value.substr(0, idx);
+                        span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                } else if (element.nodeType === 1 && element.childNodes && !/(script|style)/i.test(element.tagName)) {
+                    for (var i = 0; i < element.childNodes.length; i++) {
+                        i += highlightTerm(element.childNodes[i], term);
+                    }
+                }
+            }
+            return 0;
+        }
+
+        function removeHighlights(iframeDocument) {
+            var highlightedElements = iframeDocument.querySelectorAll('.highlight');
+            highlightedElements.forEach(function (element) {
+                var parent = element.parentNode;
+                parent.replaceChild(document.createTextNode(element.textContent), element);
+                parent.normalize();
+            });
+        }
+
+        document.addEventListener('copy', function (e) {
+            e.preventDefault();
+        });
+
+        // Load bookmark on page load
+        window.onload = function () {
+            var savedBookmark = localStorage.getItem('bookmarkedPage');
+            if (savedBookmark !== null) {
+                bookmarkedPage = parseInt(savedBookmark);
+                bookmarkButton.setAttribute('data-state', "go-to-bookmark");
+                // bookmarkButton.querySelector('img').src = "bookmarkgo.png";   // Change the image to indicate go to bookmark state
+                bookmarkButton.querySelector('img').src = "./aiimages/others/bookmarkgo.png";   // Change the image to indicate go to bookmark state
+
+            }
+        };
+    </script>
+</body>
+
+</html>

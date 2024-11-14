@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial</title>
+    <link rel="stylesheet" href="001AI.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .maindiv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background-image: url('./aiimages/001D-background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-blend-mode: overlay;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+            box-sizing: border-box;
+            margin: 20px;
+        }
+        .content {
+            max-width: 90%;
+            text-align: justify;
+            box-sizing: border-box;
+            word-spacing: normal;
+      
+        }
+          .para1 {
+
+            margin: 0 0 20px;
+            line-height: 1.5;
+            font-size: 16px;
+            color: white;
+
+            background-color: blue;
+            /* light yellow background */
+            border: 4px solid yellow;
+            /* yellow border */
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        .para1:first-letter {
+            font-size: 30px;
+            color: #f55f5f;
+        }
+
+        .para1b {
+         
+            background-color: red;
+        }
+
+
+        @media (max-width: 600px) {
+            .maindiv {
+                text-align: justify;
+                padding: 10px;
+                margin: 10px;
+                font-size: 16px;
+            }
+        
+    </style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="content">
+            <h2 class="headerh"> <span class="headertxt">Editorial</span> </h2>
+            <p class="para1">
+
+                In a time where Artificial Intelligence greatly influences our everyday lives, this book is an
+                indispensable guide to understanding the wide-ranging aspects of Artificial Intelligence. It creates a firm foundation by
+                breaking down AI's concepts and principles into detailed comprehensible parts.
+                <span class="gap-parainside"></span>
+
+                In this book, the author has skillfully illustrated and conveyed the concepts of AI in a simple and
+                clear manner, ensuring that readers gain valuable knowledge. As such, it becomes a vital resource for
+                anyone looking to attain a foundational yet in-depth knowledge of Artificial Intelligence.
+
+            </p>
+        </div>
+    </div>
+    <script>
+              // copy protection
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+    </script>
+
+</body>
+
+</html>

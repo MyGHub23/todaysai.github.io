@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Artificial Intelligence</title>
+    <link rel="stylesheet" href="001AI.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .maindiv {
+            margin: 30px;
+        }
+
+        .img4AI {
+            max-width: 60%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 40px;
+        }
+
+        .go-to-top-btn {
+            background-color: blue;
+            color: white;
+            padding: 10px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            position: fixed;
+            /* Fixed positioning */
+            right: 0;
+            /* Align to the left */
+            top: 50%;
+            /* Center vertically */
+            transform: translateY(-50%);
+            /* Adjust for true center */
+            z-index: 1000;
+            /* Ensure it is on top of other elements */
+        }
+
+        .go-to-top-btn:hover {
+            background-color: rgb(206, 154, 9);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <div>
+            <img src="./aiimages/081-thankyouAI.jpg" class="img4AI" />
+        </div>
+    </div>
+
+    <a href="001A-introAI.html" class="go-to-top-btn">Go to Top&#8593;</a>
+
+    <script>
+        // copy protection
+        document.addEventListener('copy', function (e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

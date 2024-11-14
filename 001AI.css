@@ -1,0 +1,321 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f0f0f0;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    /* Center the .maindiv horizontally */
+}
+
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(132, 245, 177, 0.153);
+    padding: 1px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    /* margin-top: 10px; */
+    /* Reduced top margin */
+    /* This line centers content vertically */
+}
+
+.content {
+    max-width: 900px;
+    padding: 5px;
+    text-align: justify;
+    box-sizing: border-box;
+    word-spacing: normal;
+    /* Ensures normal word spacing */
+}
+
+@media (min-width: 600px) {
+    body {
+        justify-content: center;
+        /* Center the content horizontally */
+    }
+
+    .maindiv {
+        flex-direction: row;
+        max-width: 1000px;
+        /* Limit the max width on larger screens */
+        margin: 1px auto 0 auto;
+        /* Reduced top margin, auto left and right margins for centering */
+    }
+
+    .content {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 599px) {
+    .content {
+        padding: 10px;
+        font-size: 16px;
+        text-align: left;
+        /* Normal alignment for mobile */
+    }
+
+    .para1,
+    .para2,
+    .para3,
+    .para4,
+    .para5,
+    .para6,
+    .para7,
+    .para8,
+    .para9,
+    .para10,
+    .para11,
+    .para12,
+    .para13,
+    .para14 p {
+        font-size: 12px;
+    }
+}
+
+.chatgptuse p {
+    font-size: 12px;
+}
+
+::selection {
+    color: red;
+    background: yellow;
+}
+
+.headerh {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.headertxt {
+    background: yellow;
+     color: rgb(9, 9, 135);
+
+    opacity: .6;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+@media (max-width: 599px) {
+    .headertxt {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+}
+
+@media (min-width: 600px) {
+    .maindiv {
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.para1,
+.para4,
+.para7,
+.para10 {
+    margin: 0 0 20px;
+    line-height: 1.5;
+    border: 2px solid #ffcc00;
+    /* border: 2px solid #3303a1; */
+    /* yellow border */
+    background-color: rgba(19, 223, 238, 0.3);
+
+    /* light yellow background */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: cursive; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 18px;
+    color: rgb(2, 2, 75);
+}
+
+.para2,
+.para5,
+.para8,
+.para11 {
+    margin: 0 0 20px;
+    line-height: 1.5;
+    border: 2px solid #ffcc00;
+    /* yellow border */
+    background-color: rgba(255, 255, 0, 0.3);
+    /* light yellow background */
+    padding: 20px;
+    border-radius: 2em / 5em;
+    /* border-radius: 5px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(5, 5, 92);
+}
+
+.para3,
+.para6,
+.para9,
+.para12 {
+    margin: 0 0 20px;
+    line-height: 1.5;
+    border: 2px solid #3803d8;
+    /* yellow border */
+    background-color: rgba(19, 223, 238, 0.3);
+    /* light yellow background */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 18px;
+    color: rgb(5, 5, 92);
+}
+
+.img4AI1,
+.img4AI3,
+.img4AI5,
+.img4AI7,
+.img4AI9,
+.img4AI11 {
+    max-width: 40%;
+    height: auto;
+    border-radius: 40%;
+    margin-left: 10px;
+    float: right;
+    padding: 10px;
+}
+
+.img4AI2,
+.img4AI4,
+.img4AI6,
+.img4AI8,
+.img4AI10 {
+    max-width: 40%;
+    height: auto;
+    border-radius: 40%;
+    margin-left: 10px;
+    float: left;
+    padding: 10px;
+}
+
+
+.img4AI1Small {
+    max-width: 25%;
+    height: auto;
+    border-radius: 40%;
+    margin-left: 10px;
+    float: left;
+    padding: 10px;
+    /* Image small left */
+}
+
+.img4AI1SmallL {
+    max-width: 25%;
+    height: auto;
+    border-radius: 40%;
+    margin-left: 10px;
+    float: left;
+    padding: 10px;
+    /* Image small left */
+}
+
+.img4AI1SmallR {
+    max-width: 25%;
+    height: auto;
+    border-radius: 40%;
+    margin-right: 10px;
+    float: right;
+    padding: 10px;
+    /* Image small left */
+}
+
+.img4AI-centerB {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25%;
+    width: 25%;
+    border-radius: 5%;
+    /* This image will be centers at bottom*/
+
+}
+
+.img4AI {
+    max-width: 40%;
+    height: auto;
+    border: 2px solid yellowgreen;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+
+.img4AIA {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40%;
+
+}
+
+.img4AIB {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+}
+
+.img4AI1AA {
+    max-width: 30%;
+    height: auto;
+    margin-left: 10px;
+    float: right;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* gap adjust */
+.gap-parahead {
+    display: block;
+    padding-bottom: -0.01px;
+    /* Adjust this value as needed */
+}
+
+.gap-parainside {
+    display: block;
+    padding-bottom: 10px;
+    /* Adjust this value as needed */
+}
+
+
+/* 
+<strong>Veed.io: 
+</strong> <span class="gap-parahead"></span>
+
+<font size="-1">   https://writesonic.com/ </font> <br>
+
+<strong>Veed.io: </strong> 
+<span class="gap-parainside"></span>
+
+ <span style="display: block; margin-left: 20px;">
+
+ </span> */
